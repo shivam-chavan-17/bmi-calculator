@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI-Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="head">
+            <h1 class="head1">BMI</h1>
+            <h2 class="head2">CALCULATOR</h2>
+        </div>
+
+        <div class="container">
+            <div class="gender">
+                <label for="gender" class="para1">Select Gender :</label>
+                <input type="radio" id="male" name="gender" value="male" checked>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+
+            <div class="input-container">
+                <input type="text" id="height-para">
+                <input type="text" id="weight-para">
+            </div>
+            <div class="name">
+                <h2>height(cm)</h2>
+                <h2>weight(kg)</h2>
+            </div>
+
+            <div class="btn">
+                <button id="calc-btn" onclick="calcBmi()">calculate your BMI</button>
+                <p>Your BMI is: <span id="bmiResult"></span></p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
